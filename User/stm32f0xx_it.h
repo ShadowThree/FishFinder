@@ -1,0 +1,55 @@
+/**
+  ******************************************************************************
+  * @file    GPIO/IOToggle/stm32f10x_it.h 
+  * @author  MCD Application Team
+  * @version V3.5.0
+  * @date    08-April-2011
+  * @brief   This file contains the headers of the interrupt handlers.
+  ******************************************************************************
+  * @attention
+  *
+  * THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
+  * WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE
+  * TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY
+  * DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING
+  * FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE
+  * CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
+  *
+  * <h2><center>&copy; COPYRIGHT 2011 STMicroelectronics</center></h2>
+  ******************************************************************************
+  */
+
+/* Define to prevent recursive inclusion -------------------------------------*/
+#ifndef __STM32F10x_IT_H
+#define __STM32F10x_IT_H
+
+/* Includes ------------------------------------------------------------------*/
+#include "stm32f0xx.h"
+#include "stm32f0xx_exti.h"
+#include "adc.h"
+
+/* Exported types ------------------------------------------------------------*/
+/* Exported constants --------------------------------------------------------*/
+/* Exported macro ------------------------------------------------------------*/
+/* Exported functions ------------------------------------------------------- */
+void EXTI4_15_IRQHandler(void);
+void NMI_Handler(void);
+void HardFault_Handler(void);
+void MemManage_Handler(void);
+void BusFault_Handler(void);
+void UsageFault_Handler(void);
+void SVC_Handler(void);
+void DebugMon_Handler(void);
+void PendSV_Handler(void);
+void RCC_CRS_IRQHandler(void);
+void SysTick_Handler(void);
+void ADC1_IRQHandler(void);  // _COMP
+void EXTI0_IRQHandler(void);
+void TIM3_IRQHandler(void);
+void TIM14_IRQHandler(void);
+void USART1_IRQHandler(void);
+void CEC_IRQHandler(void);
+
+#endif /* __STM32F10x_IT_H */
+
+/******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
